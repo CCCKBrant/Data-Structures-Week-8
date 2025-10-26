@@ -134,3 +134,20 @@ Index 9: - John: 909-876-1234
 '''
 # Edge Case #3 - Searching for a value not in the table
 print(table.search("Chris")) # None
+
+#Design Memo
+# Why is a Hash Table the right structure for fast lookups?
+# A Hash table is the right structure for a fast lookup because instead of going through
+# thousands of potential data, which would take a long time, it instead goes directly to the index that
+# the key is under to find the value. This shortens the time it takes to search data and is an efficient
+# and organized way to store data as well.
+# How did you handle collisions?
+# Well, there weren't many collisions to counter when doing the code. Our resources gave a pretty
+# good outline for how hash tables should be formatted and gave good outlines for all of the methods.
+# However, I did realize that the output from the edge cases didn't exactly match the desired output outlined
+# in our assignment. So, I had to go back to my print_table() and search() method to make sure that the key
+# Was also printed/returned in the format of "{current.key}: {current.value}". 
+# When might an engineer choose a hash table over a list or tree?
+# An engineer might choose a hash table over a list or table when dealing with data ranging in numbers
+# of thousands that could easily be stored under an index to make the data structure more organized.
+# This allows for quick lookups that would be advantageous compared to lists and tables that would be slow. 
